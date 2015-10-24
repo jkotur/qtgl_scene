@@ -13,9 +13,11 @@ add_executable(app
   src/main.cpp
   src/scene_window.h
   src/scene_window.cpp
+  src/algorithm.cpp
 )
 
 set_property(TARGET app PROPERTY CXX_STANDARD 11)
 
 target_link_libraries(app Qt5::Widgets)
+target_link_libraries(app pthread)
 
